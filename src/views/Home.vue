@@ -14,7 +14,16 @@
     </div>
 
     <div id="second-part">
-      dsfkjhsdfkhsdfksdhfk
+      
+      <img src="@/assets/pepper.png" alt="pepper-1" width="200">
+      <img src="@/assets/pepper.png" alt="pepper-2" width="200">
+
+      <div id="intro-wrapper">
+        <h2>Modern, professional and simply <strong>amazing</strong></h2>
+        <p>Chilling Con Carne partners with clients all over the world to deliver products adapted to their needs. </p>
+        <span></span>
+        <p>Our team is dedicated to you, to help making your dream project real.</p>
+      </div>
     </div>
   
   </div>
@@ -31,11 +40,12 @@ export default {
 
 
 <style lang="scss">
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400&display=swap');
+
   .home {
     display: flex;
     flex-direction: column;
-
-    overflow: hidden;
 
   }
 
@@ -45,114 +55,179 @@ export default {
 
     height: 100vh;
     width: 100vw;
+    
+    &>.title {
+      position: relative;
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 60vw;
+      height: 50vh;
+
+      &>img {
+        max-width:100%;
+        max-height:100%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      &>h1 {
+
+        position: absolute;
+        margin: 0;
+
+        color: white;
+        text-shadow: 4px 2px 6px rgba(0,0,0,0.55);
+
+        font-size: 7vw;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 100%;
+
+        transform: translate(-50%, -50%);
+
+        &>strong {
+          text-shadow: none;
+
+          background: rgb(255,241,43);
+          background: linear-gradient(90deg, rgba(255,241,43,1) 0%, rgba(255,44,0,1) 50%, rgba(255,241,43,1) 100%);
+          background-size: 300%;
+          
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 900;
+          letter-spacing: 0;
+          
+          text-transform: uppercase;
+          
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: animated_text 6s linear infinite;
+          -moz-animation: animated_text 6s linear infinite;
+          -webkit-animation: animated_text 6s linear infinite;
+        }
+        @-webkit-keyframes animated_text {
+          
+          0% {
+            background-position: 0%;
+          }
+          50% {
+            background-position: 150%;
+          }
+          100% {
+            background-position: 300%;
+          }
+        }
+      }
+    }
+
+    & #chevrons {
+      position: absolute;
+
+      left: 50vw;
+      transform: translateX(-50%);
+      bottom: 5vh;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      animation: animated_chevron 3s linear infinite;
+      -moz-animation: animated_chevron 3s linear infinite;
+      -webkit-animation: animated_chevron 3s linear infinite;
+
+      @-webkit-keyframes animated_chevron {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+         transform: translateY(10px); 
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+
   }
 
   #second-part {
 
-    width: 100vw;
-    height: 100vh;
+    height: 200vh;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 8px;
+    transform-style: preserve-3d;
+
     background-color: white;
-  }
-
-  .title {
-    position: relative;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 60vw;
-    height: 50vh;
 
     &>img {
-      max-width:100%;
-      max-height:100%;
-
       position: absolute;
-      top: 50%;
-      left: 50%;
 
-      transform: translate(-50%, -50%);
+      :first-child {
+        transform: translateZ(-3px);
+      }
+      :last-child {
+        transform-origin: 0;
+        transform: translateZ(3px);
+      }
     }
 
-    &>h1 {
 
-      position: absolute;
-      margin: 0;
+    &>#intro-wrapper {
 
-      color: white;
-      text-shadow: 4px 2px 6px rgba(0,0,0,0.55);
+      position: relative;
 
-      font-size: 7vw;
+      width: 50%;
+      height: 100vh;
 
-      position: absolute;
-      top: 50%;
-      left: 50%;
+      margin: auto;
 
-      width: 100%;
+      display: flex;
+      flex-direction: column;
 
-      transform: translate(-50%, -50%);
+      justify-content: center;
+      align-items: center;
 
-      &>strong {
-        text-shadow: none;
+      &>h2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 64px;
 
-        background: rgb(255,241,43);
-        background: linear-gradient(90deg, rgba(255,241,43,1) 0%, rgba(255,44,0,1) 50%, rgba(255,241,43,1) 100%);
-        background-size: 300%;
-        
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        letter-spacing: 0;
-        
-        text-transform: uppercase;
-        
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animated_text 6s linear infinite;
-        -moz-animation: animated_text 6s linear infinite;
-        -webkit-animation: animated_text 6s linear infinite;
-      }
-      @-webkit-keyframes animated_text {
-        
-        0% {
-          background-position: 0%;
-        }
-        50% {
-          background-position: 150%;
-        }
-        100% {
-          background-position: 300%;
+        color: black;
+
+        &>strong {
+          color: #FFDF38;
         }
       }
-    }
-  }
 
-  #chevrons {
-    position: absolute;
+      &>span {
+        height:5px;
+        width: 100px;
 
-    left: 50vw;
-    transform: translateX(-50%);
-    bottom: 5vh;
+        background-color: #7CD1DE;
 
-    &:hover {
-      cursor: pointer;
-    }
-
-    animation: animated_chevron 4s linear infinite;
-    -moz-animation: animated_chevron 4s linear infinite;
-    -webkit-animation: animated_chevron 4s linear infinite;
-
-    @-webkit-keyframes animated_chevron {
-      0% {
-        transform: translateY(0px);
+        border-radius: 3px;
       }
-      50% {
-       transform: translateY(10px); 
-      }
-      100% {
-        transform: translateY(0px);
+
+      &>p{
+
+        width: 65%;
+
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
       }
     }
+
   }
 </style>

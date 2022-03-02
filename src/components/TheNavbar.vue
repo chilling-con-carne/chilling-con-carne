@@ -1,57 +1,84 @@
 <template>
-    <div id="nav">
-      <router-link to="/">HOME</router-link>
-      <router-link to="/about">ABOUT</router-link>
-      <router-link to="/services">SERVICES</router-link>
-      <router-link to="/work">WORK</router-link>
-  </div>
+    <nav>
+      <ul>
+        <li><router-link to="/">HOME</router-link></li>
+        <li><router-link to="/about">ABOUT</router-link></li>
+        <li><router-link to="/services">SERVICES</router-link></li>
+        <li><router-link to="/work">WORK</router-link></li>
+      </ul>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&');
 
-#nav {
+  nav {
 
-  margin-top: 5vh;
+    position: absolute;
 
-  position: absolute;
+    height: 64px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    margin-bottom: 3vh; 
 
-  top: 0;
-  left: 0;
+    width: 100vw;
+    margin: auto;
 
-  width: 100vw;
-  height: 1.1em;
+    ul { 
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      padding: 0;
 
-  gap: 15px;
+      font-family: 'Raleway', sans-serif;
 
-  &>a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+      display: flex;
+      gap: 20px;
 
-    color:white;
-
-    text-decoration: none;
-
-
-    &::after {
-      content: "";
-      width: 100%;
-      height:2px;
-
-      background-color: white;
-      transition: 0.3s;
+      justify-content: space-between; 
+      align-items: center; 
     
-      display: none;
-    }
-
-    &:hover::after {
-      display: block;      
-    }
+      margin: 0; 
+      list-style: none; 
+  
+      li {  
+        a { 
+          color: white; 
+          font-size: 14px; 
+          font-weight: 500;
+  
+          text-transform: uppercase; 
+          text-decoration: none; 
+          letter-spacing: 0.15em; 
+          display: inline-block; 
+          position: relative; 
+  
+          transition: all 0.3s ease-in-out; 
+        } 
+  
+        a:hover { 
+          color: #FFDF38; 
+        } 
+  
+        a:after { 
+          color: #FFDF38; 
+          background: none repeat scroll 0 0 transparent; 
+          bottom: 0; 
+          content: ""; 
+          display: block; 
+          height: 2px; 
+          left: 50%; 
+          position: absolute; 
+          background: #FFDF38; 
+          transition: width 0.3s ease 0s, left 0.3s ease 0s; 
+          width: 0; 
+        } 
+  
+        a:hover:after { 
+          width: 100%; 
+          left: 0; 
+        } 
+      } 
+    } 
   }
-}
 
 </style>
