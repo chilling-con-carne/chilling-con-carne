@@ -24,18 +24,47 @@
         <span></span>
         <p>Our team is dedicated to you, to help making your dream project real.</p>
       </div>
-    </div>
+    
   
+  
+
+      <div id="services-wrapper">
+        <h2>
+          We want to help you <br> make an impact. Here's how:
+        </h2>
+
+        <ul>
+          <li><ServiceComponent title="Web design"
+                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            ]"
+                                list-color="#00A3FF"/>
+          </li>
+          <div></div>
+          <li><ServiceComponent title="Web development"
+                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            ]"
+                                list-color="#FF0000"/>
+          </li>
+          <div></div>
+          <li><ServiceComponent title="Branding"
+                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                                            ]"
+                                list-color="#00900E"/>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-
-export default {
-  name: 'Home',
-  components: {
-  }
-}
+<script setup>
+import ServiceComponent from '@/components/ServiceComponent.vue'
 </script>
 
 
@@ -162,8 +191,6 @@ export default {
 
   #second-part {
 
-    height: 200vh;
-    
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 8px;
@@ -185,8 +212,6 @@ export default {
 
 
     &>#intro-wrapper {
-
-      position: relative;
 
       width: 50%;
       height: 100vh;
@@ -226,6 +251,35 @@ export default {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
         font-weight: 400;
+      }
+    }
+
+    &>#services-wrapper {
+
+      width: 75vw;
+      height: 100vh;
+
+      margin: auto;
+
+      &>h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 64px;
+
+        color: black;
+      }
+
+      &>ul {
+
+        margin: 0;
+
+        list-style:none;
+
+        display: flex;
+        flex-direction: row;
+        gap: 5vw;
+        justify-content:center;
+        align-items: center;
+
       }
     }
 
