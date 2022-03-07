@@ -34,30 +34,41 @@
                                             'Mobile & Web Apps',
                                             'UI Prototyping',
                                             ]"
-                                list-color="#00A3FF"/>
+                                list-color="#00A3FF"
+                                learn-more-link="/services/web-design"/>
           </li>
-          <div></div>
+          <div class="separator"></div>
           <li><ServiceComponent title="Web development 💻"
                                 :features="['Robust, secure, mordern and built with the latest technologies',
                                             'Frontend / backend development',
                                             'Q/A Testing',
                                             ]"
-                                list-color="#FF0000"/>
+                                list-color="#FF0000" 
+                                learn-more-link="/services/web-development"/>
           </li>
-          <div></div>
+          <div class="separator"></div>
           <li><ServiceComponent title="Branding 💼"
                                 :features="['Your fully customized website fitting your brand',
                                             'Logo design and brand image ',
                                             'Corporate Identity',
                                             ]"
-                                list-color="#00900E"/>
+                                list-color="#00900E"
+                                learn-more-link="/services/branding"/>
           </li>
         </ul>
       </div>
 
       <div id="recent-work">
-      </div>
+        <div class="images">
+          <img src="@/assets/lpdpl/desktop.png" alt="lespaniersdupetitlucien - desktop">
+          <img src="@/assets/lpdpl/mobile.png" alt="lespaniersdupetitlucien - mobile">
+        </div>
 
+        <div class="recent-work-containter">
+          <h1>Recent Work</h1>
+        </div>
+
+      </div>
     </div>
   </div>
 </template>
@@ -282,6 +293,10 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
         &>strong {
           color: #FFDF38;
         }
+
+        @media screen and (max-width: 568px) {
+          font-size: 48px;
+        }
       }
 
       &>span {
@@ -296,6 +311,7 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
       &>p{
 
         width: 65%;
+        min-width: 300px;
 
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
@@ -313,6 +329,10 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
         font-size: 64px;
 
         color: black;
+
+        @media screen and (max-width: 568px) {
+          font-size: 48px;
+        }
       }
 
       &>ul {
@@ -327,17 +347,73 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
         justify-content:center;
         align-items: center;
 
+        &>.separator {
+          width: 3px;
+          height: 100px;
+
+          margin-top: 20px;
+
+          border-radius: 10px;
+
+          background-color: #7CD1DE;
+        }
+
         @media screen and (max-width: 900px) {
           flex-direction: column;
+
+          &>.separator {
+            width: 100px;
+            height: 3px;
+          }
         }
 
       }
+
+      
     }
 
     &>#recent-work {
+      
+      width: 60vw;
+      margin: auto;
+
+      display: flex;
+      flex-direction: row;
+
+      margin-top: 10vw;
+
       width: 100vw;
       height: 100vh;
-    }
 
+      background-color:blue;
+
+      &>.images {
+
+        display: flex;
+        flex-direction: row;
+
+        width: 33vw;
+
+        &>img {
+          &:first-child { //desktop
+            max-width: 400px;
+            max-height: 400px;
+          }
+          &:last-child { //mobile
+            max-height: 500px;
+
+            margin-left: -50px;
+            margin-top: 50px;
+          }
+        }
+      }
+    
+      &>.recent-work-container{
+        &>h1{
+          font-family: 'Raleway', sans-serif;
+          font-size: 64px;
+        }
+      }
+    }
   }
 </style>
