@@ -40,7 +40,8 @@
       margin: 0; 
       list-style: none; 
   
-      li {  
+      li { 
+        display:inline-block; 
         a { 
           color: white; 
           font-size: 14px; 
@@ -53,8 +54,58 @@
           position: relative; 
   
           transition: all 0.3s ease-in-out; 
-        } 
-  
+
+
+          // ANIMATION SHIT
+          transform: translateY(-10px);
+          opacity: 0;
+
+          animation-name: text_appear;
+          animation-duration: 0.75s;
+          animation-timing-function: ease-in;
+          animation-fill-mode: forwards;
+
+          -moz-animation-name: text_appear; // DUMB COMPATIBILY SHIT
+          -moz-animation-duration: 0.75s;
+          -moz-animation-timing-function: ease-in;
+          -moz-animation-fill-mode: forwards;
+
+          -webkit-animation-name: text_appear; // DUMB COMPATIBILY SHIT
+          -webkit-animation-duration: 0.75s;
+          -webkit-animation-timing-function: ease-in;
+          -webkit-animation-fill-mode: forwards;
+        }
+
+        &:first-child>a{
+          animation-delay: 0s;
+          -moz-animation-delay: 0s;
+          -webkit-animation-delay: 0s;
+        }
+        &:nth-child(2)>a {
+          animation-delay: 0.125s;
+          -moz-animation-delay: 0.125s;
+          -webkit-animation-delay: 0.125s;
+        }
+        &:nth-child(3)>a {
+          animation-delay: 0.25s;
+          -moz-animation-delay: 0.25s;
+          -webkit-animation-delay: 0.15s;
+        }
+        &:last-child>a {
+          animation-delay: 0.375s;
+          -moz-animation-delay: 0.375s;
+          -webkit-animation-delay: 0.375s;
+        }
+         
+        @-webkit-keyframes text_appear {
+          0% {
+          }
+          100%{
+            transform: none;
+            opacity: 1;
+          }
+        }// END ANIMATION SHIT 
+    
         a:hover { 
           color: #FFDF38; 
         } 

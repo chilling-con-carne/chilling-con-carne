@@ -33,38 +33,25 @@ console.log(features)
 		display: flex;
 		flex-direction: column;
 
+
 		max-width: 300px;
 
 		&>h3{
 			color:  black;
 			font-family: 'Raleway', sans-serif;
-			font-size: 32px;
+			font-size: 28px;
 			font-weight: 700;
 		}
 
 		&>ul {
-			margin: 0;
+
+			display: flex;
+			flex-direction: column;
+
+			align-items: flex-start;
 
 			&>li {
 				margin-bottom: 1em;
-
-				list-style: none;
-
-				&::before{
-					content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-					color: white; /* Change the color */
-					width:1px;
-					height:1px;
-
-					border: 1px solid red;
-					border-radius: 10px;
-					// border-radius: 10px;
-					// font-weight: bold;  If you want it to be bold 
-					// display: inline-block; /* Needed to add space between the bullet and the text */
-					// width: 0.5em;  Also needed for space (tweak if needed) 
-					// height: 0.5em;
-					margin-left: -1em; /* Also needed for space (tweak if needed) */
-				}
 			}
 		}
 	}

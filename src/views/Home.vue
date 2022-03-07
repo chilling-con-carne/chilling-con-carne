@@ -4,7 +4,7 @@
     <div id="first-part">
       <div class="title">
         <img src="@/assets/computer.png" alt="computer">
-        <h1>CHILLING <strong>CON</strong> CARNE</h1>
+        <div><span>CHILLING</span> <span><strong>CON</strong></span> <span>CARNE</span></div>
       </div>
       
       <a href="#second-part">
@@ -14,9 +14,6 @@
     </div>
 
     <div id="second-part">
-      
-      <img src="@/assets/pepper.png" alt="pepper-1" width="200">
-      <img src="@/assets/pepper.png" alt="pepper-2" width="200">
 
       <div id="intro-wrapper">
         <h2>Modern, professional and simply <strong>amazing</strong></h2>
@@ -24,8 +21,6 @@
         <span></span>
         <p>Our team is dedicated to you, to help making your dream project real.</p>
       </div>
-    
-  
   
 
       <div id="services-wrapper">
@@ -34,31 +29,35 @@
         </h2>
 
         <ul>
-          <li><ServiceComponent title="Web design"
-                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          <li><ServiceComponent title="Web design 💄"
+                                :features="['Modern, attractive and fully responsive',
+                                            'Mobile & Web Apps',
+                                            'UI Prototyping',
                                             ]"
                                 list-color="#00A3FF"/>
           </li>
           <div></div>
-          <li><ServiceComponent title="Web development"
-                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          <li><ServiceComponent title="Web development 💻"
+                                :features="['Robust, secure, mordern and built with the latest technologies',
+                                            'Frontend / backend development',
+                                            'Q/A Testing',
                                             ]"
                                 list-color="#FF0000"/>
           </li>
           <div></div>
-          <li><ServiceComponent title="Branding"
-                                :features="['Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          <li><ServiceComponent title="Branding 💼"
+                                :features="['Your fully customized website fitting your brand',
+                                            'Logo design and brand image ',
+                                            'Corporate Identity',
                                             ]"
                                 list-color="#00900E"/>
           </li>
         </ul>
       </div>
+
+      <div id="recent-work">
+      </div>
+
     </div>
   </div>
 </template>
@@ -78,7 +77,7 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
 
   }
 
-  #first-part {
+  #first-part { // part with the computer and the title
 
     background: linear-gradient(#80D4E1, #157887);
 
@@ -107,25 +106,73 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
         transform: translate(-50%, -50%);
       }
 
-      &>h1 {
+      &>div {
 
         position: absolute;
-        margin: 0;
 
-        color: white;
-        text-shadow: 4px 2px 6px rgba(0,0,0,0.55);
-
-        font-size: 7vw;
-
-        position: absolute;
         top: 50%;
         left: 50%;
 
-        width: 100%;
+        margin: 0;
+
+        color: white;
+
+        gap: 20px;
+
+        width: 50vw;
 
         transform: translate(-50%, -50%);
 
-        &>strong {
+        &>span {
+          text-shadow: 4px 2px 6px rgba(0,0,0,0.55);  
+          font-size: 7vw;
+          margin-left: 1vw;
+
+          display: inline-block;
+
+          transform: translateY(25px);
+          opacity: 0;
+
+          animation-name: text_appear;
+          animation-duration: 0.75s;
+          animation-timing-function: ease-in;
+          animation-fill-mode: forwards;
+
+          -moz-animation-name: text_appear;
+          -moz-animation-duration: 0.75s;
+          -moz-animation-timing-function: ease-in;
+          -moz-animation-fill-mode: forwards;
+
+          -webkit-animation-name: text_appear;
+          -webkit-animation-duration: 0.75s;
+          -webkit-animation-timing-function: ease-in;
+          -webkit-animation-fill-mode: forwards;
+
+          &:first-child{
+            animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            -webkit-animation-delay: 0s;
+          }
+          &:nth-child(2) {
+            animation-delay: 0.125s;
+            -moz-animation-delay: 0.125s;
+            -webkit-animation-delay: 0.125s;
+          }
+          &:last-child {
+            animation-delay: 0.25s;
+            -moz-animation-delay: 0.25s;
+            -webkit-animation-delay: 0.25s;
+          }
+        }
+        @-webkit-keyframes text_appear {
+          100%{
+            opacity: 1;
+            transform: none;
+          }
+        }
+
+        & strong {
+
           text-shadow: none;
 
           background: rgb(255,241,43);
@@ -140,9 +187,9 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
           
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          animation: animated_text 6s linear infinite;
-          -moz-animation: animated_text 6s linear infinite;
-          -webkit-animation: animated_text 6s linear infinite;
+          animation: animated_text 6s linear infinite 0s;
+          -moz-animation: animated_text 6s linear infinite 0s;
+          -webkit-animation: animated_text 6s linear infinite 0s;
         }
         @-webkit-keyframes animated_text {
           
@@ -197,6 +244,8 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
     transform-style: preserve-3d;
 
     background-color: white;
+
+    margin-bottom: 25vh;
 
     &>img {
       position: absolute;
@@ -257,8 +306,6 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
     &>#services-wrapper {
 
       width: 75vw;
-      height: 100vh;
-
       margin: auto;
 
       &>h2 {
@@ -280,7 +327,16 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
         justify-content:center;
         align-items: center;
 
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+        }
+
       }
+    }
+
+    &>#recent-work {
+      width: 100vw;
+      height: 100vh;
     }
 
   }
