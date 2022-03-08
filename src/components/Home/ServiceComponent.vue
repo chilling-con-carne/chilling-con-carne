@@ -6,7 +6,7 @@
 		</ul>
 		<div class="learn-more">
 			<router-link :to="learnMoreLink">Learn more</router-link>
-			<img src="@/assets/right-arrow.png" alt="right arrow" height="30">
+			<img src="@/assets/images/right-arrow.png" alt="right arrow" height="30">
 		</div>
 	</div>
 </template>

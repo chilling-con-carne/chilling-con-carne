@@ -3,12 +3,12 @@
    
     <div id="first-part">
       <div class="title">
-        <img src="@/assets/computer.png" alt="computer">
+        <img src="@/assets/images/computer.png" alt="computer">
         <div><span>CHILLING</span> <span><strong>CON</strong></span> <span>CARNE</span></div>
       </div>
       
       <a href="#second-part">
-        <img src="@/assets/chevron-double-down.png" alt="chevron" id="chevrons">
+        <img src="@/assets/images/chevron-double-down.png" alt="chevron" id="chevrons">
       </a>
 
     </div>

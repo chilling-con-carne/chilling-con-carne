@@ -1,14 +1,14 @@
 <template>
 <div id="recent-work">
 	<div class="images">
-		<img src="@/assets/lpdpl/desktop.png" alt="lespaniersdupetitlucien - desktop">
-		<img src="@/assets/lpdpl/mobile.png" alt="lespaniersdupetitlucien - mobile">
+		<img src="@/assets/images/lpdpl/desktop.png" alt="lespaniersdupetitlucien - desktop">
+		<img src="@/assets/images/lpdpl/mobile.png" alt="lespaniersdupetitlucien - mobile">
 	</div>
 	<div class="recent-work-container">
 		<h1>Recent Work</h1>
 		<div>
 			<router-link to="/work">VIEW ALL</router-link>
-			<img src="@/assets/right-arrow.png" alt="right arrow" height="30">
+			<img src="@/assets/images/right-arrow.png" alt="right arrow" height="30">
 		</div>
 	</div>
 </div>

@@ -12,5 +12,8 @@
 	.settings-container {
 		position: absolute;
 		width: fit-content;
+
+		right: 0;
+		top: 0;
 	}
 </style>
