@@ -1,11 +1,13 @@
 <template>
-  <TheNavbar></TheNavbar>
+  <TheNavbar />
+  <TheSettings />
   <router-view/>
 </template>
 
 <script setup>
   
   import TheNavbar from '@/components/TheNavbar.vue'
+  import TheSettings from '@/components/TheSettings'
  
 </script>
 
