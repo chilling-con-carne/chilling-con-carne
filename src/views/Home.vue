@@ -15,66 +15,18 @@
 
     <div id="second-part">
 
-      <div id="intro-wrapper">
-        <h2>Modern, professional and simply <strong>amazing</strong></h2>
-        <p>Chilling Con Carne partners with clients all over the world to deliver products adapted to their needs. </p>
-        <span></span>
-        <p>Our team is dedicated to you, to help making your dream project real.</p>
-      </div>
-  
+      <HomeIntroComponent />
+      <HomeServicesComponent />
+      <HomeRecentWorkComponent />
 
-      <div id="services-wrapper">
-        <h2>
-          We want to help you <br> make an impact. Here's how:
-        </h2>
-
-        <ul>
-          <li><ServiceComponent title="Web design 💄"
-                                :features="['Modern, attractive and fully responsive',
-                                            'Mobile & Web Apps',
-                                            'UI Prototyping',
-                                            ]"
-                                list-color="#00A3FF"
-                                learn-more-link="/services/web-design"/>
-          </li>
-          <div class="separator"></div>
-          <li><ServiceComponent title="Web development 💻"
-                                :features="['Robust, secure, mordern and built with the latest technologies',
-                                            'Frontend / backend development',
-                                            'Q/A Testing',
-                                            ]"
-                                list-color="#FF0000" 
-                                learn-more-link="/services/web-development"/>
-          </li>
-          <div class="separator"></div>
-          <li><ServiceComponent title="Branding 💼"
-                                :features="['Your fully customized website fitting your brand',
-                                            'Logo design and brand image ',
-                                            'Corporate Identity',
-                                            ]"
-                                list-color="#00900E"
-                                learn-more-link="/services/branding"/>
-          </li>
-        </ul>
-      </div>
-
-      <div id="recent-work">
-        <div class="images">
-          <img src="@/assets/lpdpl/desktop.png" alt="lespaniersdupetitlucien - desktop">
-          <img src="@/assets/lpdpl/mobile.png" alt="lespaniersdupetitlucien - mobile">
-        </div>
-
-        <div class="recent-work-containter">
-          <h1>Recent Work</h1>
-        </div>
-
-      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import ServiceComponent from '@/components/ServiceComponent.vue'
+import HomeIntroComponent from '@/components/HomeIntroComponent.vue'
+import HomeRecentWorkComponent from '@/components/HomeRecentWorkComponent.vue'
+import HomeServicesComponent from '@/components/HomeServicesComponent.vue'
 </script>
 
 
@@ -245,175 +197,5 @@ import ServiceComponent from '@/components/ServiceComponent.vue'
       }
     }
 
-  }
-
-  #second-part {
-
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 8px;
-    transform-style: preserve-3d;
-
-    background-color: white;
-
-    margin-bottom: 25vh;
-
-    &>img {
-      position: absolute;
-
-      :first-child {
-        transform: translateZ(-3px);
-      }
-      :last-child {
-        transform-origin: 0;
-        transform: translateZ(3px);
-      }
-    }
-
-
-    &>#intro-wrapper {
-
-      width: 50%;
-      height: 100vh;
-
-      margin: auto;
-
-      display: flex;
-      flex-direction: column;
-
-      justify-content: center;
-      align-items: center;
-
-      &>h2{
-        font-family: 'Raleway', sans-serif;
-        font-size: 64px;
-
-        color: black;
-
-        &>strong {
-          color: #FFDF38;
-        }
-
-        @media screen and (max-width: 568px) {
-          font-size: 48px;
-        }
-      }
-
-      &>span {
-        height:5px;
-        width: 100px;
-
-        background-color: #7CD1DE;
-
-        border-radius: 3px;
-      }
-
-      &>p{
-
-        width: 65%;
-        min-width: 300px;
-
-        font-family: 'Roboto', sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-      }
-    }
-
-    &>#services-wrapper {
-
-      width: 75vw;
-      margin: auto;
-
-      &>h2 {
-        font-family: 'Raleway', sans-serif;
-        font-size: 64px;
-
-        color: black;
-
-        @media screen and (max-width: 568px) {
-          font-size: 48px;
-        }
-      }
-
-      &>ul {
-
-        margin: 0;
-
-        list-style:none;
-
-        display: flex;
-        flex-direction: row;
-        gap: 5vw;
-        justify-content:center;
-        align-items: center;
-
-        &>.separator {
-          width: 3px;
-          height: 100px;
-
-          margin-top: 20px;
-
-          border-radius: 10px;
-
-          background-color: #7CD1DE;
-        }
-
-        @media screen and (max-width: 900px) {
-          flex-direction: column;
-
-          &>.separator {
-            width: 100px;
-            height: 3px;
-          }
-        }
-
-      }
-
-      
-    }
-
-    &>#recent-work {
-      
-      width: 60vw;
-      margin: auto;
-
-      display: flex;
-      flex-direction: row;
-
-      margin-top: 10vw;
-
-      width: 100vw;
-      height: 100vh;
-
-      background-color:blue;
-
-      &>.images {
-
-        display: flex;
-        flex-direction: row;
-
-        width: 33vw;
-
-        &>img {
-          &:first-child { //desktop
-            max-width: 400px;
-            max-height: 400px;
-          }
-          &:last-child { //mobile
-            max-height: 500px;
-
-            margin-left: -50px;
-            margin-top: 50px;
-          }
-        }
-      }
-    
-      &>.recent-work-container{
-        &>h1{
-          font-family: 'Raleway', sans-serif;
-          font-size: 64px;
-        }
-      }
-    }
   }
 </style>
