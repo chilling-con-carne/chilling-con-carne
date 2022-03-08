@@ -24,9 +24,9 @@
 </template>
 
 <script setup>
-import HomeIntroComponent from '@/components/HomeIntroComponent.vue'
-import HomeRecentWorkComponent from '@/components/HomeRecentWorkComponent.vue'
-import HomeServicesComponent from '@/components/HomeServicesComponent.vue'
+import HomeIntroComponent from '@/components/Home/HomeIntroComponent.vue'
+import HomeRecentWorkComponent from '@/components/Home/HomeRecentWorkComponent.vue'
+import HomeServicesComponent from '@/components/Home/HomeServicesComponent.vue'
 </script>
 
 

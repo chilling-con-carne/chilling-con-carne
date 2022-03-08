@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import ServiceComponent from '@/components/ServiceComponent.vue'
+import ServiceComponent from '@/components/Home/ServiceComponent.vue'
 </script>
 
 
