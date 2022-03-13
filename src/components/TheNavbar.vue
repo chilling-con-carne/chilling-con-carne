@@ -1,6 +1,6 @@
 <template>
     <nav>
-      <ul>
+      <ul :class="{'dark': path!='/'}">
         <li><router-link to="/">HOME</router-link></li>
         <li><router-link to="/about">ABOUT</router-link></li>
         <li><router-link to="/services">SERVICES</router-link></li>
@@ -8,6 +8,22 @@
       </ul>
   </nav>
 </template>
+
+<script setup>
+  import { watch, ref } from 'vue'
+  import { useRoute } from 'vue-router'
+  
+  const route = useRoute();
+  const path = ref(route.path);
+
+  watch(() => route.name, () => {
+
+      path.value = route.path;
+
+    }, { immediate: true });
+
+
+</script>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&');
@@ -39,7 +55,13 @@
     
       margin: 0; 
       list-style: none; 
-  
+      
+      &.dark {
+        & a {
+          color: black;
+        }
+      }
+
       li { 
         display:inline-block; 
         a { 

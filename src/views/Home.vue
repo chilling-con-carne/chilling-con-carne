@@ -6,10 +6,8 @@
         <img src="@/assets/computer.png" alt="computer">
         <div><span>CHILLING</span> <span><strong>CON</strong></span> <span>CARNE</span></div>
       </div>
-      
-      <a href="#second-part">
-        <img src="@/assets/chevron-double-down.png" alt="chevron" id="chevrons">
-      </a>
+
+      <Chevrons href="#second-part"/>
 
     </div>
 
@@ -27,6 +25,8 @@
 import HomeIntroComponent from '@/components/Home/HomeIntroComponent.vue'
 import HomeRecentWorkComponent from '@/components/Home/HomeRecentWorkComponent.vue'
 import HomeServicesComponent from '@/components/Home/HomeServicesComponent.vue'
+
+import Chevrons from '@/components/Global/Chevrons.vue'
 </script>
 
 
@@ -169,33 +169,33 @@ import HomeServicesComponent from '@/components/Home/HomeServicesComponent.vue'
       }
     }
 
-    & #chevrons {
-      position: absolute;
+    // & #chevrons {
+    //   position: absolute;
 
-      left: 50vw;
-      transform: translateX(-50%);
-      bottom: 5vh;
+    //   left: 50vw;
+    //   transform: translateX(-50%);
+    //   bottom: 5vh;
 
-      &:hover {
-        cursor: pointer;
-      }
+    //   &:hover {
+    //     cursor: pointer;
+    //   }
 
-      animation: animated_chevron 3s linear infinite;
-      -moz-animation: animated_chevron 3s linear infinite;
-      -webkit-animation: animated_chevron 3s linear infinite;
+    //   animation: animated_chevron 3s linear infinite;
+    //   -moz-animation: animated_chevron 3s linear infinite;
+    //   -webkit-animation: animated_chevron 3s linear infinite;
 
-      @-webkit-keyframes animated_chevron {
-        0% {
-          transform: translateY(0px);
-        }
-        50% {
-         transform: translateY(10px); 
-        }
-        100% {
-          transform: translateY(0px);
-        }
-      }
-    }
+    //   @-webkit-keyframes animated_chevron {
+    //     0% {
+    //       transform: translateY(0px);
+    //     }
+    //     50% {
+    //      transform: translateY(10px); 
+    //     }
+    //     100% {
+    //       transform: translateY(0px);
+    //     }
+    //   }
+    // }
 
   }
 </style>
