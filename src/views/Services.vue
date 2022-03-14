@@ -4,15 +4,74 @@
 		<Chevrons href="#services-second-part"/>
 		<div class="radial-gradient"></div>
 		<div class="radial-gradient"></div>
-	
 	</section>
 	<section id="services-second-part">
-		<div>yolo</div>
+		<Service v-for="service in services_array" :service="service" :key="service.title"/>
 	</section>
 </template>
 
 <script setup>
 	import Chevrons from '@/components/Global/Chevrons.vue'
+	import Service  from '@/components/Services/Service.vue'
+
+	import { reactive } from 'vue'
+
+	let services_array = reactive([
+		{
+			title: "Web desgin",
+			sub_title: "some text",
+			services: [
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+			]
+		},
+		{
+			title: "Web development",
+			sub_title: "some text",
+			services: [
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+			]
+		},
+		{
+			title: "Branding",
+			sub_title: "some text",
+			services: [
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+				{
+					title: "some title",
+					description: "some description",
+				},
+			]
+		},
+	])
 </script>
 
 <style lang="scss" scoped>

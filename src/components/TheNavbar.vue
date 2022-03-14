@@ -26,9 +26,10 @@
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&');
 
   nav {
+
+    z-index: 999;
 
     position: absolute;
 
