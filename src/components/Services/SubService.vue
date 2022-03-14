@@ -24,7 +24,10 @@
 		border-radius: 10px;
 		padding: 20px;
 
-		width: 25vw;
+		width: auto;
+		height: fit-content;
+
+		color: black;
 
 		&>* {
 			margin: 0;
@@ -34,10 +37,16 @@
 		&>h2{
 			margin-bottom: 10px;
 			font-size: 36px;
+			@media screen and (max-width: 820px) {
+				font-size: 24px
+			}
 		}
 
 		&>p {
-			font-size: 18px;
+			font-size: 14px;
+			@media screen and (max-width: 820px) {
+				font-size: 10px
+			}
 		}
 	}
 

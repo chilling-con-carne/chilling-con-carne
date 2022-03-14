@@ -26,36 +26,65 @@
 
 <style lang="scss" scoped>
 
+	:root {
+		--bp-1: 1250px;
+	}
+
 	#service-container {
-		
-		// margin-top: 100vh;
-		
-		width: 85vw;
-		height: 80vh;
-		margin: auto;
+
+		width: 80vw;
+		margin: 0 auto 10% auto;
 
 		display: flex;
+		gap: 7vw;
 		justify-content: space-between;
+
+		@media screen and (max-width: 1250px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			width: 100vw;
+
+			margin-bottom: 33vh;
+		}
 
 		&>#service-header, &>#sub-services-container {
 			width: 50%;
 		} 
 
 		& h2 {
+
+			margin-top: 0;
 			font-size: 72px;
 			color: black;
 			text-align: left;
+			font-weight: normal;
+
+			max-width: 20vw;
+
+			@media screen and (max-width: 820px) {
+				font-size: 54px;
+			}
+			@media screen and (max-width: 500px) {
+				font-size: 42px;
+			}
 		}
 
 		& p {
+			width: 90%;
 			font-size: 18px;
 			text-align: left;
+			
+			@media screen and (max-width: 820px) {
+				font-size: 12px
+			}
 		}
 
 		&>#sub-services-container {
 			display: flex;
 			flex-direction:column;
-			gap: 20px;
+			gap: 5%;
 		}
 	}
 

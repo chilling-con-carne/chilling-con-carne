@@ -19,55 +19,55 @@
 	let services_array = reactive([
 		{
 			title: "Web desgin",
-			sub_title: "some text",
+			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]
 		},
 		{
 			title: "Web development",
-			sub_title: "some text",
+			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]
 		},
 		{
 			title: "Branding",
-			sub_title: "some text",
+			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
 					title: "some title",
-					description: "some description",
+					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]
 		},
