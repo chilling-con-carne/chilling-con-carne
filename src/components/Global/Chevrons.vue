@@ -1,6 +1,7 @@
 <template>
 	<a :href="href">
-        <img :src="require(`@/assets/chevron-${path=='/'?'w':'b'}.png`)" alt="chevron">
+        <img v-if="path=='/'" src="@/assets/chevron-w.png" alt="chevron">
+        <img v-else src="@/assets/chevron-b.png" alt="chevron">
 	</a>
 </template>
 

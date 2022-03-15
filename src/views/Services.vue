@@ -22,15 +22,15 @@
 			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
-					title: "some title",
+					title: "Modern & attractive",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "Mobile & Web Apps",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "UI Prototyping",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]
@@ -40,15 +40,15 @@
 			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
-					title: "some title",
+					title: "Robust, secure & modern",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "Frontend & Backend",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "Q/A Testing",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]
@@ -58,15 +58,15 @@
 			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 			services: [
 				{
-					title: "some title",
+					title: "Website fitting your brand",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "Logo design & brand image",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 				{
-					title: "some title",
+					title: "Corporate identity",
 					description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
 				},
 			]

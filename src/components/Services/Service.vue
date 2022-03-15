@@ -21,7 +21,6 @@
 	})
 
 	let service = reactive(props.service)
-	console.log(service)
 </script>
 
 <style lang="scss" scoped>

@@ -87,6 +87,8 @@
 				font-family: 'Raleway', sans-serif;
 				color: black;
 
+				transition: 0.7s all;
+
 				&:hover {
 					cursor: pointer;
 				}
@@ -100,6 +102,11 @@
 				&>a {
 					color: black;
 					padding: 10px 20px;
+
+					&:hover {
+						color: white;
+						background: black;
+					}
 				}
 
 				&>img {
