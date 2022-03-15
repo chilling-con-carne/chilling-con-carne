@@ -26,13 +26,12 @@
 
 <style lang="scss" scoped>
 
-	:root {
-		--bp-1: 1250px;
-	}
-
 	#service-container {
 
 		width: 80vw;
+
+		padding-top: 10vh;
+
 		margin: 0 auto 10% auto;
 
 		display: flex;
