@@ -7,6 +7,8 @@
 	</section>
 	<section id="services-second-part">
 		<Service v-for="service in services_array" :service="service" :key="service.title"/>
+		<div class="radial-gradient"></div>
+		<div class="radial-gradient"></div>
 	</section>
 </template>
 
@@ -133,5 +135,29 @@
 			}
 		}
 		
+		#services-second-part {
+			
+			position:absolute;
+
+			width: 75%;
+			height: 50%;
+
+			background: radial-gradient(50% 50% at 50% 50%, #B0F5FF 0%, rgba(255, 255, 255, 0) 100%);
+			opacity: 1;
+
+			&.radial-gradient {
+				&:first-of-type {
+					width: 50%;
+					height: 80%;
+
+					top: 0;
+					left: 0;
+				}
+				&:last-child {
+
+				}
+			}
+		}
+
 	}
 </style>

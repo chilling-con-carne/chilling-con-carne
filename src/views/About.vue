@@ -26,25 +26,25 @@ import { reactive } from "vue";
 let about_array = reactive([
   {
     name: "Vincent Wendling ",
-    position: "co-founder",
+    position: "co-founder - ceo",
     title: "Funny title.",
     line: "One line description.",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare quam ut diam euismod porttitor. Pellentesque convallis urna ac massa viverra, nec auctor lacus rutrum. Praesent cursus volutpat lacus et auctor. Vestibulum vehicula egestas tellus a facilisis. Mauris nibh eros, eleifend et odio sit amet, sodales eleifend lectus. Phasellus vestibulum lobortis imperdiet. Sed dignissim condimentum hendrerit. Praesent volutpat elementum risus, in venenatis enim gravida a. Nunc vel efficitur neque, pellentesque aliquet justo. Praesent eu dui vel ex pretium porta. Sed metus eros, suscipit quis nunc consectetur, semper hendrerit eros.",
     picture: "logo.png",
-    linkedin: "https://fr.linkedin.com/in/eden-kharoub-6a9958187",
-    github: "https://github.com/Kokoden",
+    linkedin: "https://www.linkedin.com/in/vincent-wendling-5a939a1b7/",
+    github: "https://github.com/TisaneFruitRouge",
   },
   {
     name: "Germain Eguina",
-    position: "co-founder",
+    position: "co-founder - fullstack dev",
     title: "Funny title.",
-    line: "One line description.",
+    line: "Wise, Smart & versatile",
     description:
       "I am 20 years old and I am from the Central African Republic. Currently studying computer engineering in Strasbourg, I have developed a versatility in development and programming. I like to spend time on a subject that interests me and new technologies and computer science itself are great passions.",
     picture: "logo.png",
-    linkedin: "https://fr.linkedin.com/in/eden-kharoub-6a9958187",
-    github: "https://github.com/Kokoden",
+    linkedin: "https://www.linkedin.com/in/germain-eguina-4bab70220/",
+    github: "https://github.com/kiLLuua",
   },
   {
     name: "Eden Kharoub.",
@@ -57,15 +57,15 @@ let about_array = reactive([
     github: "https://github.com/Kokoden",
   },
   {
-    name: "name",
-    position: "co-founder",
-    title: "Funny title.",
-    line: "One line description.",
+    name: "Léandre BLANCHEGELEY",
+    position: "co-founder - backend dev",
+    title: "Funny Title",
+    line: "Manliest man you've ever met",
     description:
       "I am a 20 years old student at 42 School and a technology lover, I thrive on innovating and discovering new things. As a back end programmer, exploring the depth of systems and building their architecture is one of my many skills.",
     picture: "logo.png",
-    linkedin: "https://fr.linkedin.com/in/eden-kharoub-6a9958187",
-    github: "https://github.com/Kokoden",
+    linkedin: "google.fr",
+    github: "https://github.com/SanGoruden",
   },
 ]);
 </script>
