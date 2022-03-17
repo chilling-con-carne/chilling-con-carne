@@ -63,6 +63,8 @@ let { about } = toRefs(props);
   display: flex;
   flex-wrap: wrap;
 
+  gap: 20px;
+
   align-items: center;
   justify-content: space-around;
 
@@ -93,6 +95,28 @@ let { about } = toRefs(props);
       line-height: 86px;
       margin: 0;
       color: #0090a6;
+
+      &:last-of-type {
+        @media screen and (min-width:1240px) and (max-width:1550px) {
+          font-size: 72px;
+        }
+        @media screen and (max-width:1050px) {
+          font-size: 72px;
+        }
+        @media screen and (max-width:675px) {
+          line-height: 54px;
+          font-size: 54px;
+        }
+        @media screen and (max-width:500px) {
+          line-height: 44px;
+          font-size: 44px;
+        }
+        @media screen and (max-width:400px) {
+          line-height: 36px;
+          font-size: 36px;
+        }
+      }
+
     }
 
     #text {
@@ -128,6 +152,7 @@ let { about } = toRefs(props);
 
   #portrait {
     max-width: 600px;
+    max-height: 100%;
     width: 80vw;
 
     opacity: 0;

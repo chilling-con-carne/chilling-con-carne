@@ -1,6 +1,6 @@
 <template>
 	<section id="services-first-part">
-		<h1>We’re designers, developers, and builders making great things <strong>happen</strong></h1>
+		<h1>We offer key services such as <strong>web design</strong>, <strong>web development</strong>, and <strong>branding</strong></h1>
 		<Chevrons href="#services-second-part"/>
 		<div class="radial-gradient"></div>
 		<div class="radial-gradient"></div>
@@ -79,11 +79,28 @@
 <style lang="scss" scoped>
 	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@400&display=swap');
 
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 10%, 0);
+			transform: translate3d(0, 10%, 0);
+		}
+
+		to {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+
 	#services-first-part {
 		width: 100vw;
 		height: 100vh;
 
 		position: relative;
+
+		opacity: 0;	
+		animation: fadeInUp 2s ease-in-out 0s forwards;
 
 		&>h1 {
 			position: absolute;

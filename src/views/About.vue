@@ -25,12 +25,11 @@ import { reactive } from "vue";
 
 let about_array = reactive([
   {
-    name: "Vincent Wendling ",
+    name: "Vincent Wendling",
     position: "co-founder - ceo",
-    title: "Funny title.",
-    line: "One line description.",
+    line: "Software engineer during the day, meme lord at night",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare quam ut diam euismod porttitor. Pellentesque convallis urna ac massa viverra, nec auctor lacus rutrum. Praesent cursus volutpat lacus et auctor. Vestibulum vehicula egestas tellus a facilisis. Mauris nibh eros, eleifend et odio sit amet, sodales eleifend lectus. Phasellus vestibulum lobortis imperdiet. Sed dignissim condimentum hendrerit. Praesent volutpat elementum risus, in venenatis enim gravida a. Nunc vel efficitur neque, pellentesque aliquet justo. Praesent eu dui vel ex pretium porta. Sed metus eros, suscipit quis nunc consectetur, semper hendrerit eros.",
+      "As students, we often develop skills that we can't use at their full potential until we graduated and found a job. With ChillingConCarne, we aspire to use our talents not only to meet our clients' expectations, but hopefully to exceed them. Our team members are versatile and we've got every skill needed to turn your idea into reality.",
     picture: "logo.png",
     linkedin: "https://www.linkedin.com/in/vincent-wendling-5a939a1b7/",
     github: "https://github.com/TisaneFruitRouge",
@@ -38,7 +37,6 @@ let about_array = reactive([
   {
     name: "Germain Eguina",
     position: "co-founder - fullstack dev",
-    title: "Funny title.",
     line: "Wise, Smart & versatile",
     description:
       "I am 20 years old and I am from the Central African Republic. Currently studying computer engineering in Strasbourg, I have developed a versatility in development and programming. I like to spend time on a subject that interests me and new technologies and computer science itself are great passions.",
@@ -47,7 +45,7 @@ let about_array = reactive([
     github: "https://github.com/kiLLuua",
   },
   {
-    name: "Eden Kharoub.",
+    name: "Eden Kharoub",
     position: "co-founder - designer",
     line: "Cat enthusiast with a passion for detail.",
     description:
@@ -59,12 +57,11 @@ let about_array = reactive([
   {
     name: "Léandre BLANCHEGELEY",
     position: "co-founder - backend dev",
-    title: "Funny Title",
     line: "Manliest man you've ever met",
     description:
       "I am a 20 years old student at 42 School and a technology lover, I thrive on innovating and discovering new things. As a back end programmer, exploring the depth of systems and building their architecture is one of my many skills.",
-    picture: "logo.png",
-    linkedin: "google.fr",
+    picture: "photos/leandre.jpeg",
+    linkedin: "https://www.linkedin.com/in/l%C3%A9andre-blanchegeley-618152224/",
     github: "https://github.com/SanGoruden",
   },
 ]);
@@ -113,14 +110,14 @@ let about_array = reactive([
       color: #0090a6;
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1100px) {
       font-size: 48px;
     }
-    @media screen and (max-width: 700px) {
-      font-size: 36px;
-      width: 10em;
+    @media screen and (max-width: 750px) {
+      font-size: 40px;
+      width: 12em;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 450px) {
       width: 8em;
     }
   }
