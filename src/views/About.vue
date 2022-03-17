@@ -4,7 +4,7 @@
       We’re designers, developers, and builders making great things
       <strong>happen</strong>
     </h1>
-    <Chevrons href="#about-portraits" />
+    <Chevrons href="" />
     <div class="radial-gradient"></div>
     <div class="radial-gradient"></div>
   </section>
@@ -25,7 +25,7 @@ import { reactive } from "vue";
 
 let about_array = reactive([
   {
-    name: "Vincent Wendling",
+    name: "Vincent WENDLING",
     position: "co-founder - ceo",
     line: "Software engineer during the day, meme lord at night",
     description:
@@ -35,7 +35,7 @@ let about_array = reactive([
     github: "https://github.com/TisaneFruitRouge",
   },
   {
-    name: "Germain Eguina",
+    name: "Germain EGUINA",
     position: "co-founder - fullstack dev",
     line: "Wise, Smart & versatile",
     description:
@@ -45,7 +45,7 @@ let about_array = reactive([
     github: "https://github.com/kiLLuua",
   },
   {
-    name: "Eden Kharoub",
+    name: "Eden KHAROUB",
     position: "co-founder - designer",
     line: "Cat enthusiast with a passion for detail.",
     description:

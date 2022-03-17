@@ -11,7 +11,7 @@
       </div>
       <ul>
         <li>
-          <a :href="about.linkedin"
+          <a :href="about.linkedin" target="_blank" rel="noopener noreferrer"
             ><img
               src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg"
               alt="LinkedIn"
@@ -19,7 +19,7 @@
           /></a>
         </li>
         <li>
-          <a :href="about.github"
+          <a :href="about.github" target="_blank" rel="noopener noreferrer"
             ><img
               src="https://unpkg.com/simple-icons@latest/icons/github.svg"
               alt="Github"
