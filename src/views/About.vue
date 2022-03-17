@@ -50,7 +50,7 @@ let about_array = reactive([
     line: "Cat enthusiast with a passion for detail.",
     description:
       "I’m a frontend engineer passionate about graphic design and data visualisation. I like playing piano, cooking, gardening, and just trying every possible art medium known to man. I love learning new things and my coworkers like to say I have an unhealthy obsession with reading documentation. I currently am in a five-year integrated masters degree course studying computer science, focusing primarily on graphics programming, VR, and game interaction.",
-    picture: "logo.png",
+    picture: "photos/eden.webp",
     linkedin: "https://fr.linkedin.com/in/eden-kharoub-6a9958187",
     github: "https://github.com/Kokoden",
   },
