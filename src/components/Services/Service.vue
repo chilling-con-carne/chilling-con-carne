@@ -47,6 +47,10 @@
 			margin-bottom: 33vh;
 		}
 
+		@media screen and (max-width: 500px) {
+			width: 95vw;
+		}
+
 		&>#service-header, &>#sub-services-container {
 			width: 50%;
 		} 
@@ -66,6 +70,9 @@
 			}
 			@media screen and (max-width: 500px) {
 				font-size: 42px;
+			}
+			@media screen and (max-width: 400px) {
+				font-size: 36px;
 			}
 		}
 

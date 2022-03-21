@@ -97,6 +97,7 @@
 					text-decoration: none;
 					border: solid 2px black;
 					height: 1em;
+					transition: 0.3s;
 				}
 
 				&>a {

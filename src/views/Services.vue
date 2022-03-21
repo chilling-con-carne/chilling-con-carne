@@ -21,7 +21,7 @@
 	let services_array = reactive([
 		{
 			title: "Web desgin",
-			sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis urna, cursus non egestas sit amet, pulvinar vitae neque. Maecenas urna tortor, vehicula nec augue vitae, elementum ultrices nisi. Mauris ac lorem id neque tincidunt iaculis sed in leo.",
+			sub_title: "Right now, at the age of the Internet, your online presence is what defines you as a person or as a company. You cannot afford looking bad to people online. This is where we step in for you. We can design your online presence to make you look attractive to everyone.",
 			services: [
 				{
 					title: "Modern & attractive",
@@ -94,6 +94,9 @@
 	}
 
 	#services-first-part {
+		
+		overflow: none;
+		
 		width: 100vw;
 		height: 100vh;
 
@@ -161,19 +164,6 @@
 
 			background: radial-gradient(50% 50% at 50% 50%, #B0F5FF 0%, rgba(255, 255, 255, 0) 100%);
 			opacity: 1;
-
-			&.radial-gradient {
-				&:first-of-type {
-					width: 50%;
-					height: 80%;
-
-					top: 0;
-					left: 0;
-				}
-				&:last-child {
-
-				}
-			}
 		}
 
 	}
