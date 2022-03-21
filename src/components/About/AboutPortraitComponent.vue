@@ -11,20 +11,22 @@
       </div>
       <ul>
         <li>
-          <a :href="about.linkedin" target="_blank" rel="noopener noreferrer"
-            ><img
+          <a :href="about.linkedin">
+            <img
               src="https://unpkg.com/simple-icons@latest/icons/linkedin.svg"
               alt="LinkedIn"
               title="LinkedIn"
-          /></a>
+            />
+          </a>
         </li>
         <li>
-          <a :href="about.github" target="_blank" rel="noopener noreferrer"
-            ><img
+          <a :href="about.github">
+            <img
               src="https://unpkg.com/simple-icons@latest/icons/github.svg"
               alt="Github"
               title="Github"
-          /></a>
+            />
+          </a>
         </li>
       </ul>
     </div>
