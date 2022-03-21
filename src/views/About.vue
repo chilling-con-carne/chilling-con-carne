@@ -4,7 +4,7 @@
       We’re designers, developers, and builders making great things
       <strong>happen</strong>
     </h1>
-    <Chevrons href="" />
+    <Chevrons href="#about-portraits" />
     <div class="radial-gradient"></div>
     <div class="radial-gradient"></div>
   </section>

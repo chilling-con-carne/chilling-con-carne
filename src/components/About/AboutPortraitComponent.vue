@@ -40,6 +40,7 @@ const props = defineProps({
 });
 
 let { about } = toRefs(props);
+
 </script>
 
 <style scoped lang="scss">
