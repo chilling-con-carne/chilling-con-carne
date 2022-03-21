@@ -5,7 +5,7 @@
 			<li v-for="feat in features" :key="feat">{{ feat }}</li>
 		</ul>
 		<div class="learn-more">
-			<router-link :to="learnMoreLink">Learn more</router-link>
+			<router-link :to="learnMoreLink" target="_blank" rel="noopener noreferrer">Learn more</router-link>
 			<img src="@/assets/right-arrow.png" alt="right arrow" height="30">
 		</div>
 	</div>
@@ -25,6 +25,7 @@ let title = ref(props.title);
 let features = reactive(props.features);
 let listColor = ref(props.listColor);
 let learnMoreLink = ref(props.learnMoreLink);
+console.log(learnMoreLink.value)
 
 
 </script>

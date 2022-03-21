@@ -1,6 +1,6 @@
 <template>
-	<div id="service-container">
-		<div id="service-header">
+	<div class="service-container" :id="service.title.toLowerCase().replace(' ', '-')">
+		<div class="service-header">
 			<h2>{{ service.title }}</h2>
 			<p>{{ service.sub_title }}</p>
 		</div>
@@ -25,7 +25,7 @@
 
 <style lang="scss" scoped>
 
-	#service-container {
+	.service-container {
 
 		width: 80vw;
 
@@ -51,7 +51,7 @@
 			width: 95vw;
 		}
 
-		&>#service-header, &>#sub-services-container {
+		&>.service-header, &>#sub-services-container {
 			width: 50%;
 		} 
 

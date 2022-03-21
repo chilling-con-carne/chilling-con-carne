@@ -10,7 +10,7 @@
 			'UI Prototyping',
 			]"
 			list-color="#00A3FF"
-			learn-more-link="/services/web-design"/>
+			learn-more-link="/services#web-design"/>
 		</li>
 		<div class="separator"></div>
 		<li><ServiceComponent title="Web development 💻"
@@ -19,7 +19,7 @@
 			'Q/A Testing',
 			]"
 			list-color="#FF0000"
-			learn-more-link="/services/web-development"/>
+			learn-more-link="/services#web-development"/>
 		</li>
 		<div class="separator"></div>
 		<li><ServiceComponent title="Branding 💼"
@@ -28,7 +28,7 @@
 			'Corporate Identity',
 			]"
 			list-color="#00900E"
-			learn-more-link="/services/branding"/>
+			learn-more-link="/services#branding"/>
 		</li>
 	</ul>
 </div>

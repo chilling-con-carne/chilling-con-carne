@@ -20,7 +20,7 @@
 
 	let services_array = reactive([
 		{
-			title: "Web desgin",
+			title: "Web design",
 			sub_title: "Right now, at the age of the Internet, your online presence is what defines you as a person or as a company. You cannot afford looking bad to people online. This is where we step in for you. We can design your online presence to make you look attractive to everyone.",
 			services: [
 				{

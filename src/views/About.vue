@@ -10,9 +10,9 @@
   </section>
   <section id="about-portraits">
     <AboutPortrait
-      v-for="about in about_array"
+      v-for="(about, index) in about_array"
       :about="about"
-      :key="about.name"
+      :key="index"
     />
   </section>
 </template>
