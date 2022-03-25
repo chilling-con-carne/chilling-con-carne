@@ -35,13 +35,13 @@
 </template>
 
 <script setup>
-import { defineProps, toRefs } from "vue";
+import { defineProps, reactive } from "vue";
 
 const props = defineProps({
   about: Object,
 });
 
-let { about } = toRefs(props);
+let about = reactive(props.about);
 
 </script>
 
