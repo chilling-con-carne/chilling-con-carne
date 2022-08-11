@@ -1,7 +1,7 @@
 <template>
-<Navbar />
-<router-view></router-view>
-<Footer />
+  <Navbar />
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <script setup lang="ts">
