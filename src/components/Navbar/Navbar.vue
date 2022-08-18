@@ -3,7 +3,7 @@
                           text-sm md:text-xl duration-300 md:rounded-full md:shadow-xl md:shadow-slate-300
                           ${topOfPage ? '' : 'bg-cyan-500 md:shadow-cyan-100'} `">
   <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
+  <router-link to="/about">About us</router-link>
   <router-link to="/services">Services</router-link>
   <router-link to="/contact">Contact us</router-link>
 </nav>
