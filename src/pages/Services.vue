@@ -27,51 +27,51 @@ const services:Array<ServiceType> = [
         subservices: [
             {
                 title: 'Modern & attractive',
-                desc: 'Ipsum eu tempor duis velit reprehenderit esse reprehenderit ea laborum tempor voluptate. Incididunt aute irure amet enim nulla in laboris et et aliquip pariatur labore anim commodo. Eiusmod sint laborum occaecat incididunt sit incididunt labore ea. Aliqua',
+                desc: 'Modern and attractive design reflecting your company\'s brand and values, following the principles of good web design.',
             },
             {
                 title: 'Mobile & Web Apps',
-                desc: 'Nisi deserunt ea ipsum sit velit ipsum id tempor ipsum esse. Eiusmod ullamco nisi esse do ad dolor pariatur. Officia consequat voluptate Lorem elit minim ex dolor. Nulla sit anim velit amet sit sunt laborum. Est anim dolor labore ea incididunt officia fugiat elit quis.'
+                desc: 'More than half of the internet traffic is done on mobile. You can trust that our designs will look as good on mobile as on any device.'
             },
             {
                 title: 'UI Prototyping',
-                desc: 'Sint dolor ea pariatur adipisicing eiusmod ipsum labore aute laboris cupidatat sint nulla. Laborum sit dolor dolore consequat laboris aliqua enim exercitation enim exercitation qui. Sint labore et incididunt dolor.'
+                desc: 'Fully tested ans user approved User Interfaces (UI).'
             }
         ]
     },
     {
         title: 'Web development',
-        desc: 'Minim ea dolore eu qui ut incididunt cillum sint consequat ipsum veniam. Ea amet laborum sit amet amet nisi cupidatat cupidatat labore mollit Lorem do. Est in sint qui nulla duis aliquip cillum cupidatat occaecat laborum cupidatat veniam. Commodo ex mollit eu nostrud veniam sunt elit amet adipisicing aliqua non.',
+        desc: 'Our team of software developpers will provide you high quality websites and apps, using the lastest, most cutting edge technologies. We will take care of the development, deployment and maintenance of your project.',
         subservices: [
             {
                 title: 'Robust, modern & secure',
-                desc: 'Ullamco ullamco commodo anim mollit qui amet non. Officia cillum incididunt nulla adipisicing eu ea commodo duis. Eiusmod ea in velit et commodo cillum do. Duis cillum amet adipisicing dolore fugiat.',
+                desc: 'Using the lastest technologies, trusted by companies around the world, you can be certain that your website will be secure, modern and robust.',
             },
             {
                 title: 'Frontend & Backend',
-                desc: 'Dolore Lorem nulla deserunt consequat proident ut tempor id. Mollit et dolor aute do nostrud do fugiat incididunt et irure eiusmod non. Sit eiusmod excepteur excepteur dolore magna cillum sunt sit fugiat proident proident qui.'
+                desc: 'We will take care of both the frontend and the backend. With us, you can expect a all-in-one website, fully adapted to your needs.'
             },
             {
                 title: 'Q/A Testing',
-                desc: 'Laboris eiusmod laboris deserunt occaecat dolore laboris aute magna est duis do. Officia ut sint eu ut cillum aliquip est amet in tempor. Ex sint ea aliquip eu. Nisi incididunt voluptate anim adipisicing veniam pariatur dolor minim magna pariatur tempor irure ut velit.'
+                desc: 'By testing our product continuously, we\'ll make sure it meets the highest standards in order to deliver to you a flawless website.'
             }
         ],
     },
     {
         title: 'Branding',
-        desc: 'Do id enim excepteur dolore eiusmod tempor occaecat nulla. Duis cillum pariatur id qui aliquip proident eu veniam laboris quis veniam et quis proident. Eiusmod cillum magna excepteur aliqua pariatur in anim do ullamco fugiat. Ex cupidatat mollit ut aliqua elit in dolore Lorem in. Ullamco consectetur eu dolore aliqua. Aliqua nisi exercitation quis fugiat ullamco. Dolore in fugiat adipisicing nisi sit minim velit nostrud cupidatat consequat.',
+        desc: 'Your brand is more than just a logo or name. It’s who you are as a company at a very fundamental level. We can help you with any aspect you might be struggling with, whether you need to create a brand identity from scratch or simply find a better way to communicate your core messaging and company values through compelling graphic design.',
         subservices: [
             {
                 title: 'A website fitting your brand',
-                desc: 'Aliquip qui laboris nostrud consequat occaecat sit ad ad est irure consectetur Lorem. Quis dolore aliqua nulla consequat do Lorem dolore dolor ad deserunt. Sint est veniam ex cillum consectetur aute. Et irure dolor Lorem pariatur aliqua minim duis. Ullamco irure laborum ea reprehenderit aliquip quis. Tempor ullamco ipsum ut pariatur cillum ullamco pariatur. Magna do consectetur est tempor dolore consectetur.'
+                desc: 'First impressions matter most. We’ll help you create a website that will convey to your customers your company’s message. From logos, typefaces and colour schemes- we’ll make sure your website reflects you.'
             },
             {
                 title: 'Logo design & brand image',
-                desc: 'Consequat aute non sint aliqua dolor ipsum consectetur mollit excepteur magna ut tempor. Et fugiat consectetur ipsum do officia. Laborum nostrud minim irure aliqua consequat enim reprehenderit adipisicing consectetur. Magna nostrud nisi commodo officia magna in laboris dolore consequat irure. Quis esse excepteur culpa enim voluptate est deserunt cillum. Consequat qui anim excepteur ullamco mollit nostrud laborum tempor magna.'
+                desc:'We’ll create a strong logo design that will represent a high-level view into the core values of your company. We’ll come up with a brand design principle you can use as a style guide for your employees to follow.'
             },
             {
                 title: 'Corporate Identity',
-                desc: 'Labore magna ullamco consectetur dolore eu proident fugiat esse est occaecat amet nostrud excepteur. Dolor enim reprehenderit occaecat ullamco ut nostrud nisi. Nisi Lorem Lorem enim id labore dolore excepteur aliquip est enim velit proident ex. Aliqua amet sit ea sunt proident labore. Quis adipisicing duis aliquip do nisi aliqua in laborum magna eu sunt.'
+                desc: 'Having a strong image convinces prospective customers to buy from your business over the competition. We’re here to help you identify what your company stands for, what are its core values, and package those values in a website that resonates with your audience.'
             }
         ]
     }

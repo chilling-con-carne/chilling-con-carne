@@ -1,9 +1,9 @@
 <template>
-<div class="card lg:card-side bg-base-100 shadow-xl pt-2">
+<div class="card 2xl:card-side bg-base-100 shadow-xl pt-2">
     <figure><img class="rounded-xl w-52 lg:w-96" :src="imageUrl" alt="picture" ></figure>
     <div class="card-body gap-4 lg:gap-16">
         <h1 class="text-cyan-700 text-lg lg:text-2xl">{{ about.name }} / {{ about.position }}</h1>
-        <h3 class="underline lg:text-xl">{{ about.line }}</h3>
+        <h3 class="italic text-sm lg:text-lg">{{ about.line }}</h3>
         <p class="text-left lg:text-lg">{{ about.description }}</p>
         <ul class="flex flex-row gap-2">
             <li>

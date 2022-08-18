@@ -10,19 +10,19 @@
     </section>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import Title from '../components/Misc/Title.vue';
 import Chevrons from '../components/Misc/Chevrons.vue';
 import AboutPortrait from '../components/About/AboutPortrait.vue';
 
 import {About} from '../types';
 
-import { reactive, defineAsyncComponent } from "vue";
+import { reactive } from "vue";
 
 let abouts = reactive<Array<About>>([
   {
     name: "Vincent WENDLING",
-    position: "co-founder - ceo",
+    position: "ceo",
     line: "Software engineer during the day, meme lord at night",
     description:
       "As students, we often develop skills that we can't use at their full potential until we graduated and find a job. With ChillingConCarne, we aspire to use our talents not only to meet our clients' expectations, but hopefully to exceed them. Our team members are versatile and we've got every skill needed to turn your idea into reality.",
@@ -32,7 +32,7 @@ let abouts = reactive<Array<About>>([
   },
   {
     name: "Germain EGUINA",
-    position: "co-founder - fullstack dev",
+    position: "fullstack dev",
     line: "Wise, Smart & versatile",
     description:
       "I am 20 years old and I am from the Central African Republic. Currently studying computer engineering in Strasbourg, I have developed a versatility in development and programming. I like to spend time on a subject that interests me and new technologies and computer science itself are great passions.",
@@ -41,18 +41,8 @@ let abouts = reactive<Array<About>>([
     github: "https://github.com/kiLLuua",
   },
   {
-    name: "Eden KHAROUB",
-    position: "co-founder - designer",
-    line: "Cat enthusiast with a passion for detail.",
-    description:
-      "I’m a frontend engineer passionate about graphic design and data visualisation. I like playing piano, cooking, gardening, and just trying every possible art medium known to man. I love learning new things and my coworkers like to say I have an unhealthy obsession with reading documentation. I currently am in a five-year integrated masters degree course studying computer science, focusing primarily on graphics programming, VR, and game interaction.",
-    picture: "../../assets/about/eden.webp",
-    linkedin: "https://fr.linkedin.com/in/eden-kharoub-6a9958187",
-    github: "https://github.com/Kokoden",
-  },
-  {
     name: "Léandre BLANCHEGELEY",
-    position: "co-founder - backend dev",
+    position: "backend dev",
     line: "Manliest man you've ever met",
     description:
       "I am a 20 years old student at 42 School and a technology lover, I thrive on innovating and discovering new things. As a back end programmer, exploring the depth of systems and building their architecture is one of my many skills.",
