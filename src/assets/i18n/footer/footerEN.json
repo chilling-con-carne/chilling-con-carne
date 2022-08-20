@@ -1,0 +1,20 @@
+{
+    "minds": "Creative minds since 2022",
+    "services": {
+        "title": "Services",
+        "design": "Web design",
+        "development": "Web development",
+        "branding": "Branding"
+    },
+    "company": {
+        "title": "Company",
+        "about": "About us",
+        "contact": "Contact"
+    },
+    "legal": {
+        "title": "Legal",
+        "TOU": "Terms of use",
+        "privacy": "Privacy policy",
+        "cookie": "Cookie policy"
+    }
+}

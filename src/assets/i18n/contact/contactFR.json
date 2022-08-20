@@ -1,0 +1,12 @@
+{
+    "touch": "👋 Entrons en contact!",
+    "message": "Envoyez nous un message (on le lira, promis 🤞)",
+    "form": {
+        "name": "Votre nom",
+        "email": "Votre email",
+        "message": "Votre message",
+        "button": "ENVOYER"
+    },
+    "divider": "OU",
+    "email": "Envoyer un email à {email}"
+}

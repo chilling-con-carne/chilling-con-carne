@@ -1,0 +1,20 @@
+{
+    "minds": "Esprits créatifs depuis 2022",
+    "services": {
+        "title": "Services",
+        "design": "Design Web",
+        "development": "Développement Web",
+        "branding": "Image de marque"
+    },
+    "company": {
+        "title": "L'entrprise",
+        "about": "À propos",
+        "contact": "Contacts"
+    },
+    "legal": {
+        "title": "Mentions légales",
+        "TOU": "Conditions d'utilisations",
+        "privacy": "Politique de confidentialité",
+        "cookie": "Cookies"
+    }
+}
