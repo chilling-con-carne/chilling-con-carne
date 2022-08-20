@@ -1,12 +1,14 @@
 <template>
   <Navbar />
   <router-view></router-view>
+  <LangButton></LangButton>
   <Footer />
 </template>
 
 <script setup lang="ts">
 import Navbar from './components/Navbar/Navbar.vue';
 import Footer from './components/Footer/Footer.vue';
+import LangButton from './components/Misc/LangButton.vue';
 </script>
 
 <style>
