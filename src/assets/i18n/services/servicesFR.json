@@ -1,0 +1,63 @@
+{
+    "title": "Nous offrons des services clés tels que du ",
+    "service1": "design web",
+    "service2": "développement web",
+    "and": "et",
+    "service3": "construciton d'image de marque",
+    "services": {
+        "design": {
+            "title": "Design Web",
+            "desc": "Aujourd'hui, à l'ère de l'internet, votre présence en ligne fait partie de ce qui vous définit en tant que personne ou en tant qu'entreprise. Vous ne pouvez pas vous permettre de mal paraître en ligne. C'est là que nous intervenons pour vous. Nous pouvons façonner votre présence en ligne de manière à vous rendre attrayant aux yeux de tous.",
+            "subservices": {
+                "1": {
+                    "title": "Moderne & attractif",
+                    "desc": "Un design moderne et attrayant reflétant votre marque et les valeurs de votre entreprise et respectant les principes d'un design de qualité"
+                },
+                "2": {
+                    "title": "Applications webs et mobiles",
+                    "desc": "Plus de la moitié du trafic internet se fait sur un téléphone portable. Vous pouvez être sûr que nos designs seront aussi beaux sur mobile que sur n'importe quel autre appareil."
+                },
+                "3": {
+                    "title": "Prototypage de l'interface utilisateur",
+                    "desc": "Interfaces utilisateur (IU) entièrement testées et approuvées par des utilisateurs."
+                }
+            }
+        },
+        "development": {
+            "title": "Développement Web",
+            "desc": "Notre équipe de développeurs vous fournira un site web ou une application de haute qualité, en utilisant les technologies les plus récentes et les plus à la pointe. Nous nous chargerons du développement, du déploiement et de la maintenance de votre projet.",
+            "subservices": {
+                "1": {
+                    "title": "Robuste, moderne & sécurisé",
+                    "desc": "En utilisant les technologies les plus récentes, auxquelles font confiance les entreprises du monde entier, vous pouvez être certain que votre site web sera sécurisé, moderne et robuste."
+                },
+                "2": {
+                    "title": "Frontend & Backend",
+                    "desc": "Nous nous occupons à la fois du frontend et du backend. Avec nous, vous pouvez vous attendre à un site web tout-en-un, entièrement adapté à vos besoins."
+                },
+                "3": {
+                    "title": "Test Q/R",
+                    "desc": "En testant notre produit en permanence, nous nous assurons qu'il répond aux normes les plus strictes afin de vous livrer un site web sans faille."
+                }
+            }
+        },
+        "branding": {
+            "title": "Image de marque",
+            "desc": "Votre marque est plus qu'un simple logo ou un nom. C'est ce que vous êtes en tant qu'entreprise à un niveau très fondamental. Nous pouvons vous aider sur tous les aspects qui vous posent problème, qu'il s'agisse de créer une identité de marque à partir de zéro ou simplement de trouver un meilleur moyen de communiquer votre message principal et les valeurs de votre entreprise, par le biais d'une conception graphique convaincante.",
+            "subservices": {
+                "1": {
+                    "title": "Un site web adapté à votre marque",
+                    "desc": "La première impression est la plus importante. Nous vous aiderons à créer un site web qui transmettra à vos clients le message de votre entreprise. Qu'il s'agisse de logos, de polices de caractères ou de combinaisons de couleurs, nous veillerons à ce que votre site Web vous reflète."
+                },
+                "2": {
+                    "title": "Conception du logo et image de marque",
+                    "desc": "Nous créerons un logo fort qui représentera une vision de haut niveau des valeurs fondamentales de votre entreprise. Nous élaborerons un principe de conception de la marque que vous pourrez utiliser comme guide de style pour vos employés."
+                },
+                "3": {
+                    "title": "Identité d'entreprise",
+                    "desc": "Une image forte convainc les clients potentiels d'acheter chez vous plutôt que chez la concurrence. Nous sommes là pour vous aider à identifier ce que votre entreprise représente, quelles sont ses valeurs fondamentales, et à intégrer ces valeurs dans un site Web qui trouve un écho auprès de votre public."
+                }
+            }
+        }
+    }
+}

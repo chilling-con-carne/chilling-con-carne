@@ -11,6 +11,8 @@ import homeEN from './assets/i18n/home/homeEN.json';
 import homeFR from './assets/i18n/home/homeFR.json';
 import aboutEN from './assets/i18n/about/aboutEN.json';
 import aboutFR from './assets/i18n/about/aboutFR.json';
+import servicesEN from './assets/i18n/services/servicesEN.json';
+import servicesFR from './assets/i18n/services/servicesFR.json';
 
 const i18n = createI18n({
     legacy: false,
@@ -20,11 +22,13 @@ const i18n = createI18n({
             navbar: navbarEN,
             home: homeEN,
             about: aboutEN,
+            services: servicesEN
         },
         fr: {
             navbar: navbarFR,
             home: homeFR,
-            about: aboutFR
+            about: aboutFR,
+            services: servicesFR
         }
     }
 });
