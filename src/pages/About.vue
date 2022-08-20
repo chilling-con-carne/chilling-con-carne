@@ -1,7 +1,7 @@
 <template>
     <section class="h-screen">
-        <Title title="We’re designers, developers, and builders making great things" top-off-set="40%">
-             <strong class="text-cyan-500 font-normal"> happen</strong>
+        <Title :title="t('about.title')" top-off-set="40%">
+             <strong class="text-cyan-500 font-normal">{{ t('about.strong') }}</strong>
         </Title>
         <Chevrons href="#about-content" />
     </section>
@@ -18,34 +18,34 @@ import AboutPortrait from '../components/About/AboutPortrait.vue';
 import {About} from '../types';
 
 import { reactive } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 let abouts = reactive<Array<About>>([
   {
     name: "Vincent WENDLING",
-    position: "ceo",
-    line: "Software engineer during the day, meme lord at night",
-    description:
-      "As students, we often develop skills that we can't use at their full potential until we graduated and find a job. With ChillingConCarne, we aspire to use our talents not only to meet our clients' expectations, but hopefully to exceed them. Our team members are versatile and we've got every skill needed to turn your idea into reality.",
+    position: t('about.abouts.vincent.position'),
+    line: t('about.abouts.vincent.line'),
+    description: t('about.abouts.vincent.description'),
     picture: "logo.png",
     linkedin: "https://www.linkedin.com/in/vincent-wendling-5a939a1b7/",
     github: "https://github.com/TisaneFruitRouge",
   },
   {
     name: "Germain EGUINA",
-    position: "fullstack dev",
-    line: "Wise, Smart & versatile",
-    description:
-      "I am 20 years old and I am from the Central African Republic. Currently studying computer engineering in Strasbourg, I have developed a versatility in development and programming. I like to spend time on a subject that interests me and new technologies and computer science itself are great passions.",
+    position: t('about.abouts.germain.position'),
+    line: t('about.abouts.germain.line'),
+    description: t('about.abouts.germain.description'),
     picture: "logo.png",
     linkedin: "https://www.linkedin.com/in/germain-eguina-4bab70220/",
     github: "https://github.com/kiLLuua",
   },
   {
     name: "Léandre BLANCHEGELEY",
-    position: "backend dev",
-    line: "Manliest man you've ever met",
-    description:
-      "I am a 20 years old student at 42 School and a technology lover, I thrive on innovating and discovering new things. As a back end programmer, exploring the depth of systems and building their architecture is one of my many skills.",
+    position: t('about.abouts.leandre.position'),
+    line: t('about.abouts.leandre.line'),
+    description: t('about.abouts.leandre.description'),
     picture: "leandre.webp",
     linkedin: "https://www.linkedin.com/in/l%C3%A9andre-blanchegeley-618152224/",
     github: "https://github.com/SanGoruden",

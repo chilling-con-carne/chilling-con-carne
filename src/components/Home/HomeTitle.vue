@@ -1,5 +1,5 @@
 <template>
-<Title title="We will help you with your">
+<Title :title="$t('home.title')">
     <span class="text-cyan-400">{{ typedText }}</span>
     <span :class="`inline-block w-0.5 h-1/2 align-bottom bg-black cursor ${typeStatus ? 'typing' : ''} `">&nbsp;</span>
 </Title>
@@ -9,10 +9,13 @@
 import Title from '../Misc/Title.vue';
 
 import { ref, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const typedText = ref("");
 const typeStatus = ref(false);
-const services = ['business website', 'personnal portfolio', 'showcase site', 'branding', 'e-commerce platform'];
+const services = [t('home.examples.1'), t('home.examples.2'), t('home.examples.3'), t('home.examples.4'), t('home.examples.5')];
 const typingSpeed = 100;
 const erasingSpeed = 50;
 const newTextDelay = 1000;

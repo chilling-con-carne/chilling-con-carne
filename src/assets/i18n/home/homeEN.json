@@ -1,0 +1,44 @@
+{
+    "title": "We will help you with your",
+    "examples": {
+        "1":"business website",
+        "2": "personnal portfolio",
+        "3": "showcase site",
+        "4": "branding",
+        "5": "e-commerce platform"
+    },
+    "catch": {
+        "beginning": "Modern, professional and simply ",
+        "amazing": "amazing",
+        "middle": "Chilling Con Carne partners with clients all over the world to deliver products adapted to their needs.",
+        "end": "Our team is dedicated to you, to help making your dream project real."
+    },
+    "services": {
+        "title": "We want to help you make an impact. Here's how: ",
+        "design": {
+            "title": "Web design 💄",
+            "services": {
+                "1":"Modern, attractive and fully responsive",
+                "2":"Mobile & Web Apps",
+                "3":"UI Prototyping"
+            }
+        },
+        "development": {
+            "title": "Web development 💻",
+            "services": {
+                "1":"Robust, secure, mordern and built with the latest technologies",
+                "2":"Frontend / backend development",
+                "3":"Q/A Testing"
+            }
+        },
+        "branding": {
+            "title": "Branding 💼",
+            "services": {
+                "1":"Your fully customized website fitting your brand",
+                "2":"Logo design and brand image",
+                "3":"Corporate Identity"
+            }
+        },
+        "learn": "Learn more"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": "We’re designers, developers, and builders making great things ",
+    "strong": "happen",
+    "abouts": {
+        "vincent": {
+            "position": "ceo",
+            "line": "Cheese and Chess enthusiast",
+            "description": "As students, we often develop skills that we can't use at their full potential until we graduated and find a job. With ChillingConCarne, we aspire to use our talents not only to meet our clients' expectations, but hopefully to exceed them. Our team members are versatile and we've got every skill needed to turn your idea into reality."
+        },
+        "germain": {
+            "position": "fullstack dev",
+            "line": "Wise, Smart & versatile",
+            "description": "I am 20 years old and I am from the Central African Republic. Currently studying computer engineering in Strasbourg, I have developed a versatility in development and programming. I like to spend time on a subject that interests me and new technologies and computer science itself are great passions"
+        },
+        "leandre": {
+            "position": "backend dev",
+            "line": "Backend nerd",
+            "description": "I am a 20 years old student at 42 School and a technology lover, I thrive on innovating and discovering new things. As a back end programmer, exploring the depth of systems and building their architecture is one of my many skills."
+        }
+    }
+}
