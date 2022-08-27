@@ -6,15 +6,12 @@
   <router-link to="/about">{{ t('navbar.about') }}</router-link>
   <router-link to="/services">{{ t('navbar.services') }}</router-link>
   <router-link to="/contact">{{ t('navbar.contact') }}</router-link>
-  <LangButton />
 </nav>
 </template>
 
 <script setup lang="ts">
 import { onBeforeMount, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-
-import LangButton from '../Misc/LangButton.vue'
 
 const topOfPage = ref(true);
 

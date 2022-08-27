@@ -17,11 +17,11 @@ import aboutFR from './assets/i18n/about/aboutFR.json';
 import servicesEN from './assets/i18n/services/servicesEN.json';
 import servicesFR from './assets/i18n/services/servicesFR.json';
 import contactEN from './assets/i18n/contact/contactEN.json';
-import contactFR from './assets/i18n/contact/contactFR.json';
+import contactFR from './assets/i18n/contact/contactFR.json'; 
 
 const i18n = createI18n({
     legacy: false,
-    locale: 'fr',
+    locale: navigator.language.includes('fr') ? 'fr' : 'en',
     fallbackLocale: 'en',
     messages: {
         en: {

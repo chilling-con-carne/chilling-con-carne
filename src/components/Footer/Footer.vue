@@ -3,6 +3,7 @@
   <div>
     <img width="50" :src="Logo" alt="Chilling con carne's logo" />
     <p>Chilling Con Carne S.A.S <br>{{ t('footer.minds') }}</p>
+    <LangButton />
   </div> 
   <div>
     <span class="footer-title">{{ t('footer.services.title') }}</span> 
@@ -25,7 +26,8 @@
 </template>
 
 <script setup lang="ts">
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo.png';
+import LangButton from '../Misc/LangButton.vue';
 
 import { useI18n } from 'vue-i18n';
 
