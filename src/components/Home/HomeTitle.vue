@@ -8,19 +8,24 @@
 <script lang="ts" setup>
 import Title from '../Misc/Title.vue';
 
-import { ref, onMounted } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 const typedText = ref("");
 const typeStatus = ref(false);
-const services = [t('home.examples.1'), t('home.examples.2'), t('home.examples.3'), t('home.examples.4'), t('home.examples.5')];
+let services = [t('home.examples.1'), t('home.examples.2'), t('home.examples.3'), t('home.examples.4'), t('home.examples.5')];
 const typingSpeed = 100;
 const erasingSpeed = 50;
 const newTextDelay = 1000;
 let typeArrayIndex = 0;
 let charIndex = 0;
+
+// updating the services when the language changes
+watch(locale, () => {
+    services = [t('home.examples.1'), t('home.examples.2'), t('home.examples.3'), t('home.examples.4'), t('home.examples.5')];
+});
 
 const typeText = () => {
     if(charIndex < services[typeArrayIndex].length) {
