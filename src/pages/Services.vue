@@ -21,65 +21,68 @@ import Service from '../components/Services/Service.vue';
 import {Service as ServiceType} from '../types'
 
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 
-const services:Array<ServiceType> = [
-    {
-        title: t('services.services.design.title'),
-        desc: t('services.services.design.desc'),
-        subservices: [
-            {
-                title: t('services.services.design.subservices.1.title'),
-                desc: t('services.services.design.subservices.1.desc'),
-            },
-            {
-                title: t('services.services.design.subservices.2.title'),
-                desc: t('services.services.design.subservices.2.desc'),
-            },
-            {
-                title: t('services.services.design.subservices.3.title'),
-                desc: t('services.services.design.subservices.3.desc'),
-            }
-        ]
-    },
-    {
-        title: t('services.services.development.title'),
-        desc: t('services.services.development.desc'),
-        subservices: [
-            {
-                title: t('services.services.development.subservices.1.title'),
-                desc: t('services.services.development.subservices.1.desc'),
-            },
-            {
-                title: t('services.services.development.subservices.2.title'),
-                desc: t('services.services.development.subservices.2.desc'),
-            },
-            {
-                title: t('services.services.development.subservices.3.title'),
-                desc: t('services.services.development.subservices.3.desc'),
-            }
-        ]
-    },
-    {
-        title: t('services.services.branding.title'),
-        desc: t('services.services.branding.desc'),
-        subservices: [
-            {
-                title: t('services.services.branding.subservices.1.title'),
-                desc: t('services.services.branding.subservices.1.desc'),
-            },
-            {
-                title: t('services.services.branding.subservices.2.title'),
-                desc: t('services.services.branding.subservices.2.desc'),
-            },
-            {
-                title: t('services.services.branding.subservices.3.title'),
-                desc: t('services.services.branding.subservices.3.desc'),
-            }
-        ]
-    }
-]
+const services = computed(() => {
+    return [
+        {
+            title: t('services.services.design.title'),
+            desc: t('services.services.design.desc'),
+            subservices: [
+                {
+                    title: t('services.services.design.subservices.1.title'),
+                    desc: t('services.services.design.subservices.1.desc'),
+                },
+                {
+                    title: t('services.services.design.subservices.2.title'),
+                    desc: t('services.services.design.subservices.2.desc'),
+                },
+                {
+                    title: t('services.services.design.subservices.3.title'),
+                    desc: t('services.services.design.subservices.3.desc'),
+                }
+            ]
+        },
+        {
+            title: t('services.services.development.title'),
+            desc: t('services.services.development.desc'),
+            subservices: [
+                {
+                    title: t('services.services.development.subservices.1.title'),
+                    desc: t('services.services.development.subservices.1.desc'),
+                },
+                {
+                    title: t('services.services.development.subservices.2.title'),
+                    desc: t('services.services.development.subservices.2.desc'),
+                },
+                {
+                    title: t('services.services.development.subservices.3.title'),
+                    desc: t('services.services.development.subservices.3.desc'),
+                }
+            ]
+        },
+        {
+            title: t('services.services.branding.title'),
+            desc: t('services.services.branding.desc'),
+            subservices: [
+                {
+                    title: t('services.services.branding.subservices.1.title'),
+                    desc: t('services.services.branding.subservices.1.desc'),
+                },
+                {
+                    title: t('services.services.branding.subservices.2.title'),
+                    desc: t('services.services.branding.subservices.2.desc'),
+                },
+                {
+                    title: t('services.services.branding.subservices.3.title'),
+                    desc: t('services.services.branding.subservices.3.desc'),
+                }
+            ]
+        }
+    ]
+});
 
 </script>
 
